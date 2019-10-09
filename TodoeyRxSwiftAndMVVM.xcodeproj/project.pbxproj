@@ -7,23 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E080EC2E493593CE5990208 /* Pods_TodoeyRxSwiftAndMVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9344C18C9A5F501B049A1F28 /* Pods_TodoeyRxSwiftAndMVVM.framework */; };
+		F4087B6D234E5F2500BD772E /* UIAlertControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4087B6C234E5F2500BD772E /* UIAlertControllerExtension.swift */; };
 		F424874A234B64850091C454 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4248749234B64850091C454 /* AppDelegate.swift */; };
 		F424874C234B64850091C454 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F424874B234B64850091C454 /* SceneDelegate.swift */; };
-		F424874E234B64850091C454 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F424874D234B64850091C454 /* ViewController.swift */; };
+		F424874E234B64850091C454 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F424874D234B64850091C454 /* CategoryViewController.swift */; };
 		F4248751234B64850091C454 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F424874F234B64850091C454 /* Main.storyboard */; };
 		F4248753234B64860091C454 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4248752234B64860091C454 /* Assets.xcassets */; };
 		F4248756234B64860091C454 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4248754234B64860091C454 /* LaunchScreen.storyboard */; };
+		F4248762234B659F0091C454 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4248761234B659F0091C454 /* ItemViewController.swift */; };
+		F4248764234B65D60091C454 /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4248763234B65D60091C454 /* CategoryViewModel.swift */; };
+		F4248766234B65E40091C454 /* ItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4248765234B65E40091C454 /* ItemViewModel.swift */; };
+		F42E86CC234B674D00001CBA /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42E86CB234B674D00001CBA /* Category.swift */; };
+		F42E86CE234B675800001CBA /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42E86CD234B675800001CBA /* Item.swift */; };
+		F42E86D0234B6B5D00001CBA /* RealmMananger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42E86CF234B6B5C00001CBA /* RealmMananger.swift */; };
+		F42E86D2234B6B6200001CBA /* RealmError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42E86D1234B6B6200001CBA /* RealmError.swift */; };
+		F42E86D5234B6BB400001CBA /* RealmExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42E86D4234B6BB400001CBA /* RealmExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3DCECFF87B6331FF3AA38E32 /* Pods-TodoeyRxSwiftAndMVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodoeyRxSwiftAndMVVM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TodoeyRxSwiftAndMVVM/Pods-TodoeyRxSwiftAndMVVM.debug.xcconfig"; sourceTree = "<group>"; };
+		9344C18C9A5F501B049A1F28 /* Pods_TodoeyRxSwiftAndMVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TodoeyRxSwiftAndMVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93BDF18CD1CD987161BECBA4 /* Pods-TodoeyRxSwiftAndMVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodoeyRxSwiftAndMVVM.release.xcconfig"; path = "Pods/Target Support Files/Pods-TodoeyRxSwiftAndMVVM/Pods-TodoeyRxSwiftAndMVVM.release.xcconfig"; sourceTree = "<group>"; };
+		F4087B6C234E5F2500BD772E /* UIAlertControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertControllerExtension.swift; sourceTree = "<group>"; };
 		F4248746234B64850091C454 /* TodoeyRxSwiftAndMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoeyRxSwiftAndMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4248749234B64850091C454 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F424874B234B64850091C454 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F424874D234B64850091C454 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F424874D234B64850091C454 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		F4248750234B64850091C454 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4248752234B64860091C454 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4248755234B64860091C454 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4248757234B64860091C454 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4248761234B659F0091C454 /* ItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
+		F4248763234B65D60091C454 /* CategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
+		F4248765234B65E40091C454 /* ItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewModel.swift; sourceTree = "<group>"; };
+		F42E86CB234B674D00001CBA /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		F42E86CD234B675800001CBA /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		F42E86CF234B6B5C00001CBA /* RealmMananger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmMananger.swift; sourceTree = "<group>"; };
+		F42E86D1234B6B6200001CBA /* RealmError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmError.swift; sourceTree = "<group>"; };
+		F42E86D4234B6BB400001CBA /* RealmExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +53,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E080EC2E493593CE5990208 /* Pods_TodoeyRxSwiftAndMVVM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F9728C8873252637037F0FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9344C18C9A5F501B049A1F28 /* Pods_TodoeyRxSwiftAndMVVM.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9BDB5A233BB630D9A23DD94 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3DCECFF87B6331FF3AA38E32 /* Pods-TodoeyRxSwiftAndMVVM.debug.xcconfig */,
+				93BDF18CD1CD987161BECBA4 /* Pods-TodoeyRxSwiftAndMVVM.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F424873D234B64850091C454 = {
 			isa = PBXGroup;
 			children = (
 				F4248748234B64850091C454 /* TodoeyRxSwiftAndMVVM */,
 				F4248747234B64850091C454 /* Products */,
+				D9BDB5A233BB630D9A23DD94 /* Pods */,
+				0F9728C8873252637037F0FB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +98,80 @@
 		F4248748234B64850091C454 /* TodoeyRxSwiftAndMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				F42E86D3234B6B9900001CBA /* Extension */,
+				F42E86CA234B673500001CBA /* Common */,
+				F42E86C9234B671F00001CBA /* Service */,
+				F424875F234B65260091C454 /* View */,
+				F424875E234B65140091C454 /* ViewModel */,
+				F424875D234B64D20091C454 /* Model */,
 				F4248749234B64850091C454 /* AppDelegate.swift */,
 				F424874B234B64850091C454 /* SceneDelegate.swift */,
-				F424874D234B64850091C454 /* ViewController.swift */,
 				F424874F234B64850091C454 /* Main.storyboard */,
 				F4248752234B64860091C454 /* Assets.xcassets */,
 				F4248754234B64860091C454 /* LaunchScreen.storyboard */,
 				F4248757234B64860091C454 /* Info.plist */,
 			);
 			path = TodoeyRxSwiftAndMVVM;
+			sourceTree = "<group>";
+		};
+		F424875D234B64D20091C454 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F42E86CB234B674D00001CBA /* Category.swift */,
+				F42E86CD234B675800001CBA /* Item.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F424875E234B65140091C454 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F4248763234B65D60091C454 /* CategoryViewModel.swift */,
+				F4248765234B65E40091C454 /* ItemViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F424875F234B65260091C454 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F4248760234B656E0091C454 /* Controller */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F4248760234B656E0091C454 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F424874D234B64850091C454 /* CategoryViewController.swift */,
+				F4248761234B659F0091C454 /* ItemViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F42E86C9234B671F00001CBA /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F42E86CF234B6B5C00001CBA /* RealmMananger.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		F42E86CA234B673500001CBA /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F42E86D1234B6B6200001CBA /* RealmError.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		F42E86D3234B6B9900001CBA /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F42E86D4234B6BB400001CBA /* RealmExtension.swift */,
+				F4087B6C234E5F2500BD772E /* UIAlertControllerExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +181,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F424875A234B64860091C454 /* Build configuration list for PBXNativeTarget "TodoeyRxSwiftAndMVVM" */;
 			buildPhases = (
+				8651197D3FCFC9D85C05F8FF /* [CP] Check Pods Manifest.lock */,
 				F4248742234B64850091C454 /* Sources */,
 				F4248743234B64850091C454 /* Frameworks */,
 				F4248744234B64850091C454 /* Resources */,
+				DDA96579FBB14DCD85292CFA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +242,80 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8651197D3FCFC9D85C05F8FF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TodoeyRxSwiftAndMVVM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDA96579FBB14DCD85292CFA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TodoeyRxSwiftAndMVVM/Pods-TodoeyRxSwiftAndMVVM-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRealm/RxRealm.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRealm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TodoeyRxSwiftAndMVVM/Pods-TodoeyRxSwiftAndMVVM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F4248742234B64850091C454 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F424874E234B64850091C454 /* ViewController.swift in Sources */,
+				F42E86D2234B6B6200001CBA /* RealmError.swift in Sources */,
+				F424874E234B64850091C454 /* CategoryViewController.swift in Sources */,
+				F4248762234B659F0091C454 /* ItemViewController.swift in Sources */,
+				F4248764234B65D60091C454 /* CategoryViewModel.swift in Sources */,
+				F42E86D5234B6BB400001CBA /* RealmExtension.swift in Sources */,
 				F424874A234B64850091C454 /* AppDelegate.swift in Sources */,
+				F42E86CE234B675800001CBA /* Item.swift in Sources */,
 				F424874C234B64850091C454 /* SceneDelegate.swift in Sources */,
+				F4087B6D234E5F2500BD772E /* UIAlertControllerExtension.swift in Sources */,
+				F42E86D0234B6B5D00001CBA /* RealmMananger.swift in Sources */,
+				F4248766234B65E40091C454 /* ItemViewModel.swift in Sources */,
+				F42E86CC234B674D00001CBA /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +398,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -276,12 +452,14 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		F424875B234B64860091C454 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DCECFF87B6331FF3AA38E32 /* Pods-TodoeyRxSwiftAndMVVM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +478,7 @@
 		};
 		F424875C234B64860091C454 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93BDF18CD1CD987161BECBA4 /* Pods-TodoeyRxSwiftAndMVVM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
