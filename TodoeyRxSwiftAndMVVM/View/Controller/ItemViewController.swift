@@ -13,6 +13,8 @@ import RxSwift
 class ItemViewController: UIViewController {
 
     @IBOutlet weak var itemTableView: UITableView!
+    @IBOutlet weak var itemSearchBar: UISearchBar!
+    
     var itemViewModel = ItemViewModel()
     let disposeBag = DisposeBag()
     
@@ -21,24 +23,37 @@ class ItemViewController: UIViewController {
     override func viewDidLoad() {
         setupUIElements()
         setupTableViewBinds()
-        
+        setupSearchBarBinds()
+    }
+    
+    func setupSearchBarBinds() {
+            itemSearchBar.rx.text
+            .orEmpty
+            .throttle(0.70, scheduler: MainScheduler.instance)
+            .subscribe(onNext: { (text) in
+                print("\(text)")
+                self.itemViewModel.getItemsFilter(by: text)
+            }).disposed(by: disposeBag)
+
     }
     
     func setupTableViewBinds() {
         let itemCellIdentifier = "ItemTableViewCell"
-    
-        guard let itemList = itemViewModel.selecteCategory?.items else { return }
         
-        Observable.array(from: itemList).observeOn(MainScheduler.instance).bind(to: itemTableView.rx.items(cellIdentifier: itemCellIdentifier)) { (index, item, cell) in
-            cell.textLabel?.text = item.name
-            cell.accessoryType = item.done ? .checkmark : .none
+        itemViewModel.items.asDriver(onErrorJustReturn: []).drive(itemTableView.rx.items(cellIdentifier: itemCellIdentifier)) { (index, item, cell) in
+                cell.textLabel?.text = item.name
+                cell.accessoryType = item.done ? .checkmark : .none
         }.disposed(by: disposeBag)
-        
+            
         itemTableView.rx.modelSelected(Item.self).subscribe(onNext: { [weak self] item in
             guard let saveSelf = self else { return }
             saveSelf.itemViewModel.updateItem {
                 item.done = !item.done
             }
+        }).disposed(by: disposeBag)
+        
+        itemTableView.rx.itemSelected.subscribe(onNext: { indexPath in
+            self.itemTableView.reloadRows(at: [indexPath], with: .automatic)
         }).disposed(by: disposeBag)
             
     }
@@ -52,8 +67,8 @@ class ItemViewController: UIViewController {
     
     @IBAction func addItem(_ sender: UIBarButtonItem) {
         let actions: [UIAlertController.AlertAction] = [
-            .action(title: "Cancel", style: .destructive),
-            .action(title: "Add")
+            .action(title: "Add"),
+            .action(title: "Cancel", style: .destructive)
         ]
 
         UIAlertController.present(in: self, title: "Add", message: "Add Item", style: .alert, actions: actions)

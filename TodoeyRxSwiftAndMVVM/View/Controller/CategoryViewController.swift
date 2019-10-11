@@ -61,9 +61,9 @@ class CategoryViewController: UIViewController {
     @IBAction func addCategory(_ sender: UIBarButtonItem) {
         
         let actions: [UIAlertController.AlertAction] = [
-            .action(title: "Cancel", style: .destructive),
-            .action(title: "Add")
-        ]
+            .action(title: "Add"),
+            .action(title: "Cancel", style: .destructive)
+           ]
 
         UIAlertController.present(in: self, title: "Add", message: "Add Category", style: .alert, actions: actions)
             .subscribe(onNext: { [weak self] textValue in
