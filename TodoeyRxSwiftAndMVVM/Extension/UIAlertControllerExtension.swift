@@ -37,7 +37,7 @@ extension UIAlertController {
             }
             actions.enumerated().forEach { index, action in
                 let action = UIAlertAction(title: action.title, style: action.style) { _ in
-                    if index == 0 {
+                    if index == 1 {
                         observer.onNext(nil)
                     } else {
                         observer.onNext(textField.text)
