@@ -14,7 +14,7 @@ class ItemViewModel {
     var service = RealmMananger.shared
     var selecteCategory: Category? {
         didSet {
-            getItemsFilter()
+            getItems()
         }
     }
     
@@ -26,14 +26,14 @@ class ItemViewModel {
             item.name = itemName
             selecteCategory?.items.append(item)
         }
-        getItemsFilter()
+        getItems()
     }
     
     func updateItem(_ action: () -> ()){
         service.update(action: action)
     }
     
-    func getItemsFilter(by text: String? = nil) {
+    func getItems(filterBy text: String? = nil) {
         let itemList: [Item] = filterItemList(for: text)?.map{$0} ?? []
         items.onNext(itemList)
     }

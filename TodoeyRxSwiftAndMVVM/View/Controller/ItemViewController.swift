@@ -31,8 +31,7 @@ class ItemViewController: UIViewController {
             .orEmpty
             .throttle(0.70, scheduler: MainScheduler.instance)
             .subscribe(onNext: { (text) in
-                print("\(text)")
-                self.itemViewModel.getItemsFilter(by: text)
+                self.itemViewModel.getItems(filterBy: text)
             }).disposed(by: disposeBag)
 
     }
@@ -52,8 +51,9 @@ class ItemViewController: UIViewController {
             }
         }).disposed(by: disposeBag)
         
-        itemTableView.rx.itemSelected.subscribe(onNext: { indexPath in
-            self.itemTableView.reloadRows(at: [indexPath], with: .automatic)
+        itemTableView.rx.itemSelected.subscribe(onNext: { [weak self] indexPath in
+            guard let saveSelf = self else { return }
+            saveSelf.itemTableView.reloadRows(at: [indexPath], with: .automatic)
         }).disposed(by: disposeBag)
             
     }
